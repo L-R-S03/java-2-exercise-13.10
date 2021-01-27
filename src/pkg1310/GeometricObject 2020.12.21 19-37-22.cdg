@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="GeometricObject">
+  <ClassDiagramComponents>
+    <Class name="GeometricObject" package="pkg1310" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="filled" type="boolean" visibility="private"/>
+        <Field name="dateCreated" type="java.util.Date" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="protected"/>
+        <Constructor visibility="protected">
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="filled"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="isFilled" returnType="boolean" visibility="public"/>
+        <Method name="setFilled" returnType="void" visibility="public">
+          <Argument type="boolean" name="filled"/>
+        </Method>
+        <Method name="getDateCreated" returnType="java.util.Date" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getArea" returnType="double" visibility="public" isAbstract="true"/>
+        <Method name="getPerimeter" returnType="double" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

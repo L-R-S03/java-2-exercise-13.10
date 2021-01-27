@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Rectangle">
+  <ClassDiagramComponents>
+    <Class name="Rectangle" package="pkg1310" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="width" type="double" visibility="private"/>
+        <Field name="height" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="double" name="width"/>
+          <Argument type="double" name="height"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="double" name="width"/>
+          <Argument type="double" name="height"/>
+          <Argument type="String" name="color"/>
+          <Argument type="boolean" name="filled"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getWidth" returnType="double" visibility="public"/>
+        <Method name="setWidth" returnType="void" visibility="public">
+          <Argument type="double" name="width"/>
+        </Method>
+        <Method name="getHeight" returnType="double" visibility="public"/>
+        <Method name="setHeight" returnType="void" visibility="public">
+          <Argument type="double" name="height"/>
+        </Method>
+        <Method name="getArea" returnType="double" visibility="public"/>
+        <Method name="getPerimeter" returnType="double" visibility="public"/>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Rectangle" name="obj"/>
+        </Method>
+        <Method name="equals" returnType="boolean" visibility="public">
+          <Argument type="Object" name="obj"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="pkg1310.Rectangle" target="pkg1310.Rectangle" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
